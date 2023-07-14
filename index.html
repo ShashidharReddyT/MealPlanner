@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .icon {
+        font-size: 1.5rem;
+        margin-right: 10px;
+        margin-left: 40px;
+        color: rgb(238, 229, 229);
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Step-1  header navbar-->
+    <nav>
+      <header>
+        <p class="icon">
+          <i class="fa-solid fa-utensils fa-flip"></i>
+        </p>
+        <h1 style="color: rgb(247, 242, 242)">
+          <i>
+            <u>Meal Planner</u>
+          </i>
+        </h1>
+      </header>
+    </nav>
+    <!--step-2 search bars-->
+    <div class="container">
+      <form id="user-form">
+        <div class="form-row">
+          <div class="form-column">
+            <input type="number" id="weight" name="weight" placeholder="Enter Weight in Kgs" required>
+          </div>
+          <div class="form-column">
+            <input type="number" id="height" name="height" placeholder="Enter Height in Cms" required>
+          </div>
+          <div class="form-column">
+            <input type="number" id="age" name="age" placeholder="Enter Age" required>
+          </div>
+        </div>
+        <div class="form-a">
+          <div class="form-column">
+            <select id="gender" name="gender" placeholder="Enter Gender">
+              <option value="Gendera">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="form-column">
+            <select id="activity" name="activity" placeholder="Activity Level">
+              <option value="Activity Level">Activity Level</option>
+              <option value="light">Light</option>
+              <option value="moderate">Moderate</option>
+              <option value="active">Active</option>
+            </select>
+          </div>
+        </div>
+        <div class="button1 form-btn flex">
+          <button class="button btn form-btn" type="submit"> Generate Meals </button>
+        </div>
+      </form>
+    </div>
+    <!--step-3 Meal Plan-->
+    <div class="card" id="mealplanner">
+      <div id="loader" style="display: none"></div>
+      <div class="text-center" id="details"></div>
+      <div class="row1"></div>
+    </div>
+    <!--step-4  Recipe section -->
+    <div class="recipe1">
+      <h1 id="recipe-s" class="text-center"></h1>
+      <div class="row2" id="meal-plan">
+        <div class="recipes" id="ingredients"></div>
+        <div class="recipes" id="steps"></div>
+        <div class="recipes" id="equipment"></div>
+      </div>
+    </div>
+    <!--step-5  Footer-->
+    <footer class="footer">
+      <div class="copyright"> © CopyRight: 1996 Meal Planner</div>
+      <div class="contacts"> tel: 0123456789 </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
